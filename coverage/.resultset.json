@@ -1,0 +1,33 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/bethanyr/examples/outfitchooser/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/helpers/shirts_helper.rb": [
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/controllers/shirts_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/models/shirt.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1375116686
+  }
+}
