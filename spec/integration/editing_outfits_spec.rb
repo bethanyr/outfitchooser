@@ -2,9 +2,9 @@ require 'spec_helper'
 
 feature "editing outfits" do
   scenario "user can edit an outfit" do
-    shirt= FactoryGirl.create(:shirt, :name => "Purple flower")
-    outfit = FactoryGirl.create(:outfit, :shirt_id => shirt.id, :dayworn => "Monday")
-    sign_in_as!(FactoryGirl.create(:confirmed_user))
+    user = sign_in_as!(FactoryGirl.create(:confirmed_user, :id => 1))
+    shirt = FactoryGirl.create(:shirt, :name => "Purple flowered shirt")
+    outfit = FactoryGirl.create(:outfit, :dayworn => "Monday", :user_id => 1)
     visit ('/')
     click_link 'Monday'
     click_link 'Edit Outfit'
