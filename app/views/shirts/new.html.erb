@@ -1,0 +1,21 @@
+<h2>Add a shirt to your inventory</h2>
+
+<%= form_for(@shirt) do |f| %>
+  <p>
+    <%= f.label :name %> <br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :color %><br />
+    <%= f.text_field :color %>
+  </p>
+
+  <p>
+    On a scale of 1 to 10, with 10 being this shirt is AWESOME!
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

@@ -1,10 +1,10 @@
 <title>Outfit Tracker</title>
 <h1>Outfit Tracker </h1>
-<h2>- keeping you from the faux pas of wearing the same shirt twice in 1 week</h2>
+<em>- keeping you from the faux pas of wearing the same shirt twice in 1 week</em>
 
 <h2>Your current shirt inventory</h2>
 <ul>
-<%= @shirts.each do |shirt| %>
+<% @shirts.each do |shirt| %>
 <li><%= link_to shirt.name, shirt %> </li>
   <% end %>
 </ul>
