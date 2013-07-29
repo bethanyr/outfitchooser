@@ -4,7 +4,11 @@ class ShirtsController < ApplicationController
 
   def index
     @shirts = Shirt.all
-    @outfits = Outfit.all
+    if current_user.nil?
+
+    else
+      @outfits = Outfit.where("user_id >= (?)", current_user.id)
+    end
   end
 
   def new

@@ -7,6 +7,7 @@ class OutfitsController < ApplicationController
 
   def create
     @outfit = Outfit.new(params[:outfit])
+    @outfit.user = current_user
     if @outfit.save
       flash[ :notice] = "Outfit has been added."
       redirect_to @outfit
