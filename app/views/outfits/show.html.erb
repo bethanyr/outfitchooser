@@ -1,0 +1,8 @@
+<h2>Outfit</h2>
+<h2>Shirt: <%= @outfit.shirt.name %></h2>
+<h2>Day of Week this shirt was worn: <%= @outfit.dayworn %></h2>
+<h2>Date Worn: <%=@outfit.dateworn %></h2>
+
+<%= link_to "Edit Outfit", [:edit, @outfit] %> |
+<%= link_to "Delete Outfit", [@outfit], :method => :delete, :confirm => "Are you sure you want to delete this outfit?" %> |
+<%= link_to "View Outfits", root_path %>

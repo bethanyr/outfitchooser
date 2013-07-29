@@ -3,7 +3,7 @@ require 'spec_helper'
 feature "adding shirts" do
   scenario "can add shirts" do
     visit ('/')
-    #sign_in_as!(FactoryGirl.create(:confirmed_user))
+    sign_in_as!(FactoryGirl.create(:confirmed_user))
     click_link 'New Shirt'
     fill_in "Name", :with => 'Purple flowers'
     fill_in "Color", :with => 'Purple'

@@ -1,0 +1,22 @@
+<h2>New Outfit</h2>
+<%= form_for(@outfit) do |f| %>
+  <p>
+    <%= f.label :shirt %><br />
+    <%= f.collection_select :shirt_id, Shirt.find(:all), :id, :name, :prompt => "Select a shirt" %><br />
+
+  </p>
+
+  <p>
+    <%= f.label :dateworn %><br />
+    <%= f.date_select :dateworn %>
+  </p>
+
+  <p>
+    <%= f.label :dayworn %><br />
+    <%= f.text_field :dayworn %>
+  </p>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back', outfits_path %>

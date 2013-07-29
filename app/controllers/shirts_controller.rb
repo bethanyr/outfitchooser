@@ -1,8 +1,10 @@
 class ShirtsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
   before_filter :find_shirt, :only => [:show, :edit, :update, :destroy]
 
   def index
     @shirts = Shirt.all
+    @outfits = Outfit.all
   end
 
   def new

@@ -12,7 +12,7 @@
         null,
         1,
         null,
-        null,
+        1,
         1,
         null
       ],
@@ -25,16 +25,82 @@
         1,
         null
       ],
+      "/home/bethanyr/examples/outfitchooser/app/helpers/outfits_helper.rb": [
+        1,
+        null
+      ],
       "/home/bethanyr/examples/outfitchooser/app/helpers/shirts_helper.rb": [
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/controllers/outfits_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        7,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/models/outfit.rb": [
+        1,
+        1,
+        1,
         1,
         null
       ],
       "/home/bethanyr/examples/outfitchooser/app/controllers/shirts_controller.rb": [
         1,
         1,
+        1,
         null,
         1,
-        10,
+        21,
+        21,
         null,
         null,
         1,
@@ -85,9 +151,14 @@
       "/home/bethanyr/examples/outfitchooser/app/models/shirt.rb": [
         1,
         1,
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/outfitchooser/app/controllers/users_controller.rb": [
+        1,
         null
       ]
     },
-    "timestamp": 1375122268
+    "timestamp": 1375129396
   }
 }

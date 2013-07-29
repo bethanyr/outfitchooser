@@ -2,8 +2,8 @@ require 'spec_helper'
 
 feature "editing shirts" do
   scenario "user can edit a shirt" do
-    question= FactoryGirl.create(:shirt, :name => "Purple flower")
-    #sign_in_as!(FactoryGirl.create(:confirmed_user))
+    shirt= FactoryGirl.create(:shirt, :name => "Purple flower")
+    sign_in_as!(FactoryGirl.create(:confirmed_user))
     visit ('/')
     click_link 'Purple flower'
     click_link 'Edit Shirt'

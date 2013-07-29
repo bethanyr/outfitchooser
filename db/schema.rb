@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130729175708) do
+ActiveRecord::Schema.define(:version => 20130729184338) do
+
+  create_table "outfits", :force => true do |t|
+    t.string   "dayworn"
+    t.datetime "dateworn"
+    t.integer  "user_id"
+    t.integer  "shirt_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "shirts", :force => true do |t|
     t.string   "name"
