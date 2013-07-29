@@ -1,4 +1,6 @@
 Outfitchooser::Application.routes.draw do
+  devise_for :users
+
   root :to => "shirts#index"
   resources :shirts
   # The priority is based upon order of creation:

@@ -22,12 +22,14 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'email_spec', '1.2.1'
 end
 
 group :test do
   gem 'capybara'
   gem 'factory_girl'
   gem 'simplecov', :require => false
+  gem 'devise', '2.1.0'
 end
 
 gem 'jquery-rails'
