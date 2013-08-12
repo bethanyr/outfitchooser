@@ -5,7 +5,9 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
+
+gem 'omniauth-twitter'
 
 
 # Gems used only for assets and not required
@@ -23,6 +25,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'email_spec', '1.2.1'
+  gem 'sqlite3'
 end
 
 group :test do
@@ -30,6 +33,10 @@ group :test do
   gem 'factory_girl'
   gem 'simplecov', :require => false
   gem 'devise', '2.1.0'
+end
+
+group :production do
+  gem 'pg'
 end
 
 gem 'jquery-rails'

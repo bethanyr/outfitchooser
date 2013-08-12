@@ -1,15 +1,18 @@
 Outfitchooser::Application.routes.draw do
   devise_for :users
 
-  #root :to => "/:locale" + "shirts#index"
-  scope "/:locale" do
+  root :to => "shirts#index"
+  #scope "/:locale" do
     resources :outfits
     resources :shirts do
-    resources :users
-  end
-  match '/:locale' => 'shirts#index'
+      resources :users
+    end
 
-  end
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+ # match '/:locale' => 'shirts#index'
+
+ # end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
