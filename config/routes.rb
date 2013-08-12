@@ -1,10 +1,14 @@
 Outfitchooser::Application.routes.draw do
   devise_for :users
 
-  root :to => "shirts#index"''
-  resources :outfits
-  resources :shirts do
+  #root :to => "/:locale" + "shirts#index"
+  scope "/:locale" do
+    resources :outfits
+    resources :shirts do
     resources :users
+  end
+  match '/:locale' => 'shirts#index'
+
   end
   # The priority is based upon order of creation:
   # first created -> highest priority.
