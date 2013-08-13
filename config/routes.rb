@@ -1,5 +1,6 @@
 Outfitchooser::Application.routes.draw do
 
+<<<<<<< HEAD
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "omniauth_callbacks"}
 
 
@@ -13,6 +14,13 @@ Outfitchooser::Application.routes.draw do
  # match '/:locale' => 'shirts#index'
 
  # end
+=======
+  root :to => "shirts#index"''
+  resources :outfits
+  resources :shirts do
+    resources :users
+  end
+>>>>>>> parent of 90740a9... updated license
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
