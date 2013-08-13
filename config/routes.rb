@@ -1,5 +1,7 @@
 Outfitchooser::Application.routes.draw do
-  devise_for :users
+
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}, controllers: {omniauth_callbacks: "omniauth_callbacks"}
+
 
   root :to => "shirts#index"
   #scope "/:locale" do
@@ -8,8 +10,6 @@ Outfitchooser::Application.routes.draw do
       resources :users
     end
 
-  match 'auth/:provider/callback', to: 'sessions#create'
-  match 'auth/failure', to: redirect('/')
  # match '/:locale' => 'shirts#index'
 
  # end
